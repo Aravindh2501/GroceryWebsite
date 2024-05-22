@@ -1,0 +1,91 @@
+.testimonialsection {
+    padding: 3rem 3rem;
+
+    .testo_img {
+        position: relative;
+
+        .custo-img {
+            width: 30rem;
+        }
+
+        .testo_card {
+            position: absolute;
+            padding: 15px;
+            bottom: -1rem;
+            right: 6rem;
+            border-radius: 14px;
+            background: $bg-white;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    }
+
+    .testo_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding: 0px 6.3rem 0px 0px;
+
+        .testo_star {
+            display: flex;
+            align-items: center;
+
+            .star {
+                color: $gold;
+            }
+
+            p {
+                font-size: 0.8rem;
+                margin-left: 10px;
+                font-weight: 600;
+            }
+        }
+
+        .testo_title {
+            font-size: 0.8rem;
+            color: $green;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .testo_head {
+            font-size: 3.5rem;
+            color: $black;
+            margin-bottom: 16px;
+        }
+
+        .testo_para {
+            color: $light-black;
+            font-size: 0.9rem;
+        }
+
+        .testo_custo {
+            display: flex;
+            margin-top: 3rem;
+            align-items: center;
+
+            .testo_custo_img {
+                width: 4rem;
+                border-radius: 50%;
+            }
+
+            .testo_custo_text {
+                margin-right: 5px;
+
+                .testo_custo_title {
+                    color: $black;
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+
+                .testo_custo_para {
+                    color: $text-grey;
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                }
+
+            }
+        }
+
+    }
+}

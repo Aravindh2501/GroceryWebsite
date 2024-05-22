@@ -1,0 +1,94 @@
+.productDetail {
+    padding: 5rem 0px;
+
+    .prod_detail_right {
+        padding: 3rem 0 0;
+
+        .Prod_detail_productname {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: $black;
+
+        }
+
+        .Prod_detail_category {
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: $light-black;
+            // margin-bottom: 8px;
+        }
+
+        .Prod_detail_price {
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+            color: $light-black;
+
+            .Prod_detail_val {
+                font-size: 1.3rem;
+                font-weight: 700;
+                color: $green;
+            }
+        }
+
+        .Prod_detail_description {
+            font-weight: 400;
+            margin-bottom: 8px;
+            color: $text-grey;
+        }
+
+        .prod_buttons {
+            display: flex;
+
+            .prod_quantity_btns {
+                display: flex;
+                margin-right: 20px;
+                border: 1px solid $border;
+                border-radius: 8px;
+                box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+
+                .prod_add_btn {
+                    border: none;
+                    padding: 4px 10px;
+                    cursor: pointer;
+                }
+
+                .prod_text_btn {
+                    padding: 7px;
+                }
+
+                .prod_minus_btn {
+                    border: none;
+                    padding: 4px 10px;
+                    cursor: pointer;
+                }
+            }
+
+            .prod_cart_btn {
+                display: flex;
+                align-items: center;
+                font-size: 0.8rem;
+                font-weight: 600;
+                padding: 10px 45px;
+                border-radius: 8px;
+                color: $green;
+                background: $lg-green;
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+                transition: background-color 0.3s;
+
+                .prod_cart_icon {
+                    margin-right: 8px;
+                    width: 20px;
+                }
+            }
+
+            .clicked {
+                background: $green;
+                color: $lg-green;
+            }
+
+        }
+    }
+}

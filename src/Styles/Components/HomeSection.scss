@@ -1,0 +1,210 @@
+@import "../Common/colors";
+
+.HomeSection {
+    padding: 25px 0px;
+
+    .hs_text_content {
+        padding: 0px 0rem 0px 7rem;
+
+        .home_title {
+            font-size: 5rem;
+            color: $black;
+            margin-bottom: 20px;
+
+            .words {
+                overflow: hidden;
+                height: 95px;
+
+                span {
+                    color: $green;
+                    display: block;
+                    height: 100%;
+                    padding: 0px;
+                    // border: 1px solid;
+                    animation: spin_words 6s infinite;
+                }
+            }
+        }
+
+        .home_button {
+            padding: 12px 60px;
+            border-radius: 14px;
+            font-size: 1rem;
+            font-weight: 500;
+            background-color: $green;
+            color: $lg-green;
+            box-shadow: #3bb77ec9 0px 5px 11px;
+            margin-bottom: 30px;
+        }
+
+        .home_para {
+            color: $light-black;
+            font-weight: 500;
+            margin-bottom: 14px;
+            font-size: 1rem;
+        }
+
+        .store_button {
+            .store_title {
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            .store_btns {
+                display: flex;
+                gap: 0px 20px;
+
+                .play_store {
+                    background-image: url("../../Assets/images/googleplay.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    width: 170px;
+                    height: 47px;
+                    border-radius: 8px;
+
+                }
+
+
+                .app_store {
+                    background-image: url("../../Assets/images/appstore.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    width: 170px;
+                    height: 47px;
+                    border-radius: 8px;
+
+
+                }
+            }
+        }
+    }
+
+    .hs_img {
+        position: relative;
+
+        .hs_img_iphone {
+            width: 16rem;
+        }
+
+        .hs_card1 {
+            position: absolute;
+            border-radius: 14px;
+            padding: 10px;
+            border: 1px solid $border;
+            top: 112px;
+            display: flex;
+            align-items: center;
+            left: 24rem;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            background: $card-white;
+
+
+            .hs_icon {
+                background: $green;
+                border-radius: 50%;
+                width: 3rem;
+                padding: 8px;
+                margin: 0 auto;
+
+                .hs_icon_loco {}
+            }
+
+            .text {
+                margin-left: 8px;
+
+                .hs_title {
+                    font-weight: 600;
+                    font-size: 1rem;
+                    margin-bottom: 8px;
+                    color: $black;
+                }
+
+                .hs_para {
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    color: $text-grey;
+                }
+            }
+        }
+
+        .hs_card2 {
+            position: absolute;
+            border-radius: 14px;
+            padding: 16px 28px;
+            border: 1px solid $border;
+            top: 200px;
+            right: 4rem;
+            align-items: center;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            background: $card-white;
+
+            .hs_icon {
+                background: $green;
+                border-radius: 50%;
+                width: 6rem;
+                padding: 10px;
+                margin: 0 auto 11px;
+
+                .hs_icon_salad {}
+            }
+
+            .text {
+                .hs_title {
+                    font-weight: 600;
+                    font-size: 1rem;
+                    margin-bottom: 0px;
+                    color: $black;
+                    text-align: center;
+
+                }
+
+                .hs_para {
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                    text-align: center;
+                    color: $text-grey;
+                }
+            }
+        }
+    }
+}
+
+
+
+@keyframes spin_words {
+    10% {
+        transform: translateY(-112%);
+    }
+
+    25% {
+        transform: translateY(-100%);
+    }
+
+    35% {
+        transform: translateY(-212%);
+    }
+
+    50% {
+        transform: translateY(-200%);
+    }
+
+    60% {
+        transform: translateY(-312%);
+    }
+
+    75% {
+        transform: translateY(-300%);
+    }
+
+    85% {
+        transform: translateY(-412%);
+    }
+
+    100% {
+        transform: translateY(-400%);
+    }
+
+
+}

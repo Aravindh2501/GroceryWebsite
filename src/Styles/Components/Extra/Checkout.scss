@@ -1,0 +1,105 @@
+.checkout {
+    padding: 20px;
+
+    h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: $font-black;
+    }
+
+    p {
+        font-size: 16px;
+        color: $text-grey;
+        margin-bottom: 20px;
+    }
+
+    .checkout_card {
+        background-color: $card-white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    .checkout_card_title {
+        font-size: 18px;
+        margin-bottom: 5px;
+        color: $font-black;
+    }
+
+    .checkout_card_img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .checkout_card_text {
+        font-size: 16px;
+        color: $font-black;
+        margin: 0;
+    }
+
+    .checkout_quantity_btns {
+        display: flex;
+        align-items: center;
+
+        button {
+            background-color: $card-black;
+            color: $font-white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 5px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: darken($card-black, 10%);
+            }
+        }
+
+        .checkout_text_btn {
+            font-size: 16px;
+            margin: 0 10px;
+            color: $font-black;
+        }
+    }
+
+    .MuiTableCell-head {
+        background-color: $card-black;
+        color: $font-white;
+        font-weight: bold;
+    }
+
+    .MuiTableCell-body {
+        color: $font-black;
+    }
+
+    .MuiTableRow-root:nth-of-type(even) {
+        background-color: $bg-white;
+    }
+
+    .payment-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        p {
+            font-size: 16px;
+            color: $font-black;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: $font-black;
+        }
+
+    }
+
+    .total {
+        font-weight: bold;
+    }
+
+}

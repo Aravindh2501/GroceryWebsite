@@ -1,0 +1,26 @@
+.product_gallery {
+    .image-gallery-image {
+        width: 19rem;
+    }
+
+    .image-gallery-thumbnail.active {
+        border: none;
+        border-radius: 14px;
+        outline: 0;
+        padding: 10px;
+        box-shadow: rgb(11 11 11 / 6%) 0px 0px 0px 1px;
+        ;
+    }
+
+    .image-gallery-thumbnail:focus {
+        border: none;
+        outline: 0;
+
+    }
+
+    .image-gallery-thumbnail:hover {
+        border: none;
+        outline: 0;
+
+    }
+}

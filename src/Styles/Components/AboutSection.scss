@@ -1,0 +1,38 @@
+.aboutsection {
+    padding: 3rem 3rem;
+
+    .as_title_mini {
+        text-align: center;
+        color: $green;
+        font-size: 1rem;
+    }
+
+    .as_title {
+        font-size: 2rem;
+        text-align: center;
+        // margin-bottom: 1rem;
+    }
+
+    .about_order {
+        .about_order-card {
+            padding: 10px 100px;
+
+            .about_order-img {
+                width: 10rem;
+                height: 10rem;
+            }
+
+            .about_order-title {
+                text-align: center;
+                margin-bottom: 8px;
+            }
+
+            .about_order-para {
+                text-align: center;
+                font-weight: 400;
+                color: $text-grey;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

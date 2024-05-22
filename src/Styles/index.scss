@@ -1,0 +1,36 @@
+// index.scss
+
+// import reaact-gallery
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+
+// Auth
+
+@import "./Auth/Login.scss";
+
+// Components
+@import "./Components/HomeSection.scss";
+@import "./Components/TopCategories.scss";
+@import "./Components/FruitSection.scss";
+@import "./Components/AboutSection.scss";
+@import "./Components/TestimonialSection.scss";
+@import "./Components/Product/Product.scss";
+@import "./Components/Product/ProductFilter.scss";
+@import "./Components/Product/ProductCard.scss";
+@import "./Components/Product/ProductDetail.scss";
+@import "./Components/Product/ProductGallery.scss";
+@import "./Components/Extra/Checkout.scss";
+
+// Common
+@import "./Common/base";
+
+// Themes
+@import "./Themes/dark_theme";
+@import "./Themes/light_theme";
+
+
+// pages
+
+@import "./Pages/navbar.scss";
+@import "./Pages/main.scss";
+@import "./Pages/footer.scss";

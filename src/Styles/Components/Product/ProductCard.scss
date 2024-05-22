@@ -1,0 +1,87 @@
+.product_card {
+    .pro_card {
+        border-radius: 14px;
+        padding: 14px;
+        // box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+        position: relative;
+
+        .pro_card_img {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        .pro_card_text {
+
+
+
+            .pro_card_title {
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: $green;
+                margin-bottom: 10px;
+            }
+
+            .pro_card_para {
+                font-size: 0.9rem;
+                font-weight: 500;
+                color: $light-black;
+                margin-bottom: 16px;
+            }
+
+            .pro_card_price {
+                margin-bottom: 10px;
+
+                .pro_card_val {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    color: $green;
+                }
+            }
+
+            .pro_card_btn {
+                font-size: 1rem;
+                font-weight: 500;
+                color: $green;
+                background: $lg-green;
+                width: 100%;
+                padding: 10px;
+                border-radius: 8px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+
+                .pro_card_view_icon {
+                    height: 18px;
+                    width: 18px;
+                }
+
+                &:hover {
+                    background: darken($lg-green, 10%);
+                    color: darken($green, 10%);
+                }
+            }
+
+        }
+
+        .pro_card_selling {
+            position: absolute;
+            background: $green;
+            color: $lg-green;
+            top: 8px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 2px 6px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            .pro_card_selling_icon {
+                // margin-right: 4px;
+                width: 18px;
+            }
+        }
+
+    }
+}

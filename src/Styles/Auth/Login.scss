@@ -1,0 +1,84 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+
+
+
+    .login_left {
+        position: relative;
+
+        .login_img {
+            width: 15rem;
+            position: absolute;
+            animation: moveUpDown 2.5s infinite alternate;
+
+        }
+    }
+
+    .login_right {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        .login_card {
+            width: 30rem;
+            // border: 1px solid #ecece5;
+            padding: 20px;
+            border-radius: 14px;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            background: radial-gradient(100% 100% at 50% 50%, hsla(0, 0%, 100%, .1) 0, hsla(0, 0%, 100%, 0) 100%);
+
+            .login_text {
+                text-align: center;
+                // width: 100%;
+                background-image: linear-gradient(180deg, #FFB7B7 0%, #727272 100%), radial-gradient(60.91% 100% at 50% 0%, #FFD1D1 0%, #260000 100%), linear-gradient(238.72deg, #FFDDDD 0%, #720066 100%), linear-gradient(127.43deg, #00FFFF 0%, #FF4444 100%), radial-gradient(100.22% 100% at 70.57% 0%, #FF0000 0%, #00FFE0 100%), linear-gradient(127.43deg, #B7D500 0%, #3300FF 100%);
+                background-blend-mode: screen, overlay, hard-light, color-burn, color-dodge, normal;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+
+            .login_form {
+                display: flex;
+                flex-direction: column;
+
+                .login_input {
+                    width: 100%;
+                    margin: 15px 0px;
+                    border-radius: 7px;
+                    padding: 10px;
+                    border: 1px solid #ecece5;
+                    font-weight: 500;
+                    outline: none;
+                    font-size: 0.9rem;
+                }
+
+                .login_btn {
+                    background-image: linear-gradient(220.55deg, #00E0EE 0%, #AD00FE 100%);
+                    padding: 10px;
+                    border-radius: 8px;
+                    font-weight: 500;
+                    color: white;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+        /* Start position */
+    }
+
+    100% {
+        transform: translateY(-90px);
+        /* End position */
+    }
+}

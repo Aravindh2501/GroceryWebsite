@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import AppRoutes from "./Routes/AppRoutes"
+import "./Styles/index.scss"
+import React from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Provider } from "react-redux";
 
-function App() {
+// store
+import store from "./Redux/Store";
+
+// plugin
+gsap.registerPlugin(ScrollTrigger);
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Provider store={store}>
+      <div className="app">
+        <AppRoutes />
+      </div>
+    </Provider>
+  )
 }
 
-export default App;
+export default App
